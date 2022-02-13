@@ -1,0 +1,27 @@
+{
+  "name": "techcrunch-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --error-css scss/main.scss css/styles.css -w  --no-source-map",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+
+    "compile:sass": "sass scss/main.scss css/styles.comp.css  --no-source-map",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/styles.comp.css -o css/styles.prefix.css",
+    "compress:css": "sass css/styles.prefix.css css/styles.css --style=expanded --no-source-map",
+    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@compodoc/live-server": "^1.2.3",
+    "autoprefixer": "^10.4.2",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.6",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.7"
+  }
+}
