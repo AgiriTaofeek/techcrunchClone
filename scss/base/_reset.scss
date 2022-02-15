@@ -1,10 +1,16 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
 html{
     font-size: 62.5%;
+    @include respond($tab-land){ // < 1200px
+        font-size: 56.25%; // 1rem = 9px
+    }
 }
 
 body{
     box-sizing: border-box;
-    background-color: yellow;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 *,

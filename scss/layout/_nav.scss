@@ -1,0 +1,64 @@
+@use "../abstracts/color" as c;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.nav{
+
+    &__logo{
+        width: 7rem;
+        @include respond($tab-land-1){
+            width: 8rem;
+        
+        }
+    }
+
+    &__techcrunch{
+        color: c.$clr-primary;
+        font-size: 1.4rem;
+        margin-top: 0.5rem;
+        @include respond($tab-land-1){
+            display: none;
+        
+        }
+    }
+
+    &__login{
+        font-size: 1.6rem;
+        color: c.$clr-text-1;
+        margin-top: 0.5rem;
+        @include respond($tab-land-1){
+            display: none;
+        
+        }
+
+        
+    }
+
+    &__links{
+        @include respond($tab-land-1){
+            display: none;
+        
+        }
+    }
+
+    &__items{
+        font-size: 1.9rem;
+        color:c.$clr-text;
+        display: inline-block;
+        margin-top: 1rem;
+
+    }
+
+}
+
+.icon{
+    width: 2rem;
+    height: 2rem;
+    fill: c.$clr-text;
+}
+
+.icon-magnifying-glass{
+    position: relative;
+    top: 0.3rem;
+    width: 1.7rem;
+}

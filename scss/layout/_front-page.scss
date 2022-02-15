@@ -1,0 +1,31 @@
+@use "../abstracts/color" as c;
+
+.front-page{
+
+    &__heading{
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.1;
+    }
+
+    &__logo{
+        width: 12rem;
+    }
+
+    &__detail{
+        font-size: 1.8rem;
+        color: c.$clr-text;
+    }
+
+    &__author{
+        font-size: 1.2rem;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        
+    }
+
+    & > img:nth-child(5){
+        width: 100%;
+    }
+}
+

@@ -1,9 +1,12 @@
 //GRID
-$gutter-vertical:5rem;
-$gutter-horizontal:5rem;
+$gutter-vertical:2rem;
+$gutter-horizontal:3rem;
+$gutter-horizontal-1:1rem;
 
 //BREAKPOINTS
 $phone: 37.5em;
+$phone-1:43.75em;
 $tab-port:56.25em;
+$tab-land-1:68.75em;
 $tab-land:75em;
 $big-desktop:112.5em; //Nb:- Edit based on your project breakpoint

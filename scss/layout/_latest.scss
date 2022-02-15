@@ -1,0 +1,11 @@
+@use "../abstracts/color" as c;
+.latest{
+
+    &__text{
+        font-size: 1.8rem;
+    }
+
+    hr{
+        color:c.$clr-text-2;
+    }
+}
